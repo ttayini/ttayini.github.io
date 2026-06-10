@@ -1,0 +1,81 @@
+# GitHub Pages Jekyll Configuration
+# This file will be generated in each repository to optimize GitHub Pages builds
+
+# Theme settings
+theme: minima
+
+# Site settings
+title: "Repository Files"
+description: "Browse and manage repository files hosted on GitHub Pages"
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "*.md"
+
+# Include files
+include:
+  - "_pages"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default values for YAML frontmatter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# SEO settings
+social:
+  name: GitHub Pages
+  links:
+    - https://github.com
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Liquid settings
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# kramdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse files in the ttayini/ttayini.github.io repository hosted on GitHub Pages">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vrc-5r8.pages.dev">
+    <meta property="og:title" content="Repository Files - ttayini/ttayini.github.io">
+    <meta property="og:description" content="Browse files in the ttayini/ttayini.github.io repository hosted on GitHub Pages">
+    
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://vrc-5r8.pages.dev">
+    <meta property="twitter:title" content="Repository Files - ttayini/ttayini.github.io">
+    <meta property="twitter:description" content="Browse files in the ttayini/ttayini.github.io repository hosted on GitHub Pages">
+    
+
+    <title data-i18n="files_list">Repository Files</title>
+    
+    <!-- Favicon -->
+    
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230366d6'/><text x='50%' y='54%' font-size='28' text-anchor='middle' fill='white' font-family='system-ui, sans-serif'>TTA</text></svg>">
+    
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/github-pages.css" as="style">
+    <link rel="preload" href="assets/github-pages.js" as="script">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/github-pages.css">
+
+    <!-- GitHub Pages Jekyll frontmatter -->
+    <meta name="generator" content="GitHub Pages Uploader">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ttayini/ttayini.github.io - Repository Files",
+        "url": "https://vrc-5r8.pages.dev",
+        "description": "Browse files in the ttayini/ttayini.github.io repository hosted on GitHub Pages"
+        
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="site-logo" aria-label="Repository logo">
+                
+                TTA
+                
+            </div>
+            
+            <h1 class="site-title" data-i18n="files_list">Repository Files</h1>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Switch theme">
+                    <span class="theme-icon light-icon">🌸</span>
+                    <span class="theme-icon dark-icon">🌙</span>
+                </button>
+                
+                <div class="language-selector">
+                    <label for="language-select" class="sr-only" data-i18n="language">Language</label>
+                    <select id="language-select" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="fr-CA">Français (Canada)</option>
+                        <option value="ja">日本語</option>
+                        <option value="ru">Русский</option>
+                        <option value="ar">العربية</option>
+                        <option value="zh-TW">繁體中文</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                
+                <div class="repo-name">ttayini/ttayini.github.io</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-container">
+        <div class="content-grid">
+            <!-- File listing -->
+            <section class="card">
+                <header class="card-header">
+                    <h2 class="card-title" data-i18n="files_list">Files in this repository</h2>
+                    <p class="card-subtitle" data-i18n="files_description">Click any file to view it on GitHub Pages</p>
+                </header>
+                
+                <div class="card-body">
+                    <!-- Loading state -->
+                    <div id="loading-state" class="loading-state" style="display: none;" aria-live="polite">
+                        <div class="loading-spinner" aria-hidden="true"></div>
+                        <span data-i18n="loading">Loading files...</span>
+                    </div>
+
+                    <!-- Error state -->
+                    <div id="error-state" class="error-state" style="display: none;" role="alert" aria-live="assertive">
+                        <p data-i18n="error_loading">Error loading files</p>
+                    </div>
+
+                    <!-- Empty state -->
+                    <div id="empty-state" class="empty-state" style="display: none;">
+                        <p data-i18n="no_files">This repository appears to be empty.</p>
+                    </div>
+
+                    <!-- Files list -->
+                    <ul id="files-list" class="files-list" role="list" aria-label="Repository files">
+                        <!-- Files will be loaded here by JavaScript -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="quick-actions">
+                <section class="card">
+                    <header class="card-header">
+                        <h3 class="card-title" data-i18n="quick_actions">Quick Actions</h3>
+                    </header>
+                    
+                    <div class="card-body">
+                        <div class="action-grid">
+                            <button 
+                                id="action-upload" 
+                                class="action-tile"
+                                type="button"
+                                aria-describedby="upload-desc"
+                            >
+                                <div class="action-content">
+                                    <div class="action-icon" aria-hidden="true">↗</div>
+                                    <h4 class="action-title" data-i18n="upload">Upload</h4>
+                                    <p id="upload-desc" class="action-description" data-i18n="upload_desc">
+                                        Use the uploader to add files to this repository
+                                    </p>
+                                </div>
+                            </button>
+
+                            <button 
+                                id="action-refresh" 
+                                class="action-tile"
+                                type="button"
+                                aria-describedby="refresh-desc"
+                            >
+                                <div class="action-content">
+                                    <div class="action-icon" aria-hidden="true">↻</div>
+                                    <h4 class="action-title" data-i18n="refresh">Refresh</h4>
+                                    <p id="refresh-desc" class="action-description" data-i18n="refresh_desc">
+                                        Reload the file listing from GitHub
+                                    </p>
+                                </div>
+                            </button>
+
+                            <button 
+                                id="action-settings" 
+                                class="action-tile"
+                                type="button"
+                                aria-describedby="settings-desc"
+                            >
+                                <div class="action-content">
+                                    <div class="action-icon" aria-hidden="true">⚙</div>
+                                    <h4 class="action-title" data-i18n="settings">Settings</h4>
+                                    <p id="settings-desc" class="action-description" data-i18n="settings_desc">
+                                        Manage GitHub Pages settings for this repository
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Additional info card -->
+                <section class="card">
+                    <div class="card-body">
+                        <h4 class="card-title" data-i18n="about">About this page</h4>
+                        <p class="card-subtitle" data-i18n="about_desc">
+                            This page automatically lists repository contents using the GitHub API. 
+                            Files are served from GitHub Pages when available.
+                        </p>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p data-i18n="footer_text">
+            If this repository is empty, the uploader can create the initial <code>index.html</code> 
+            and enable GitHub Pages for the <code>main</code> branch.
+        </p>
+        <p>
+            <small>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></small>
+        </p>
+    </footer>
+
+    <!-- JavaScript configuration -->
+    <script>
+        window.GITHUB_PAGES_CONFIG = {
+            repo: "ttayini/ttayini.github.io",
+            hostedUrl: "https://vrc-5r8.pages.dev",
+            translations: {"ar": {"choose_file": "\u0627\u062e\u062a\u0631 \u0645\u0644\u0641\u064b\u0627", "close": "\u0625\u063a\u0644\u0627\u0642", "confirm_purge": "\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u062d\u0630\u0641 \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639 {repo} \u0646\u0647\u0627\u0626\u064a\u064b\u0627\u061f", "drop_hint": "\u0627\u0633\u062d\u0628 \u0645\u0644\u0641\u064b\u0627 \u0647\u0646\u0627 \u0623\u0648 \u0627\u0646\u0642\u0631 \u0644\u0644\u0627\u062e\u062a\u064a\u0627\u0631", "file_too_large_warning": "\u062a\u062d\u0630\u064a\u0631: \u0627\u0644\u0645\u0644\u0641(\u0645\u0644\u0641\u0627\u062a) \u0627\u0644\u062a\u0627\u0644\u064a\u0629 \u062a\u062a\u062c\u0627\u0648\u0632 \u0627\u0644\u062d\u062f {limit} \u0648\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u0645\u064a\u0644\u0647\u0627: {files}", "files_list": "\u0627\u0644\u0645\u0644\u0641\u0627\u062a", "json_logs": "\u0633\u062c\u0644\u0627\u062a JSON", "language": "\u0627\u0644\u0644\u063a\u0629", "pages_url": "\u0631\u0627\u0628\u0637 \u0627\u0644\u0635\u0641\u062d\u0627\u062a", "purge": "\u062a\u0637\u0647\u064a\u0631", "refresh": "\u062a\u062d\u062f\u064a\u062b", "select_repo": "\u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639", "server_error": "\u062e\u0637\u0623 \u0641\u064a \u0627\u0644\u062e\u0627\u062f\u0645: {detail}", "settings": "\u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a", "title": "\u0631\u0627\u0641\u0639 \u0627\u0644\u0645\u0644\u0641\u0627\u062a", "upload": "\u0631\u0641\u0639", "upload_failed": "\u0641\u0634\u0644 \u0631\u0641\u0639 \u0627\u0644\u0645\u0644\u0641", "upload_success": "\u062a\u0645 \u0631\u0641\u0639 \u0627\u0644\u0645\u0644\u0641 \u0628\u0646\u062c\u0627\u062d"}, "en": {"about": "About this page", "about_desc": "This page automatically lists repository contents using the GitHub API. Files are served from GitHub Pages when available.", "choose_file": "Choose a file", "close": "Close", "confirm_purge": "Are you sure you want to permanently delete the repository {repo}?", "drop_hint": "Drop a file here or click to select", "error_loading": "Error loading files", "file_too_large_warning": "Warning: the following file(s) exceed the {limit} limit and cannot be uploaded: {files}", "files_description": "Click any file to view it on GitHub Pages", "files_list": "Repository Files", "footer_text": "If this repository is empty, the uploader can create the initial index.html and enable GitHub Pages for the main branch.", "json_logs": "JSON Logs", "language": "Language", "loading": "Loading files...", "no_files": "This repository appears to be empty.", "pages_url": "Pages URL", "purge": "Purge", "quick_actions": "Quick Actions", "refresh": "Refresh", "refresh_desc": "Reload the file listing from GitHub", "select_repo": "Repository", "server_error": "Server error: {detail}", "settings": "Settings", "settings_desc": "Manage GitHub Pages settings for this repository", "title": "Uploader", "upload": "Upload", "upload_desc": "Use the uploader to add files to this repository", "upload_failed": "Upload failed", "upload_success": "Upload successful"}, "es": {"choose_file": "Elegir archivo", "close": "Cerrar", "confirm_purge": "\u00bfEst\u00e1 seguro de que desea eliminar permanentemente el repositorio {repo}?", "drop_hint": "Arrastra un archivo aqu\u00ed o haz clic para seleccionar", "file_too_large_warning": "Advertencia: el/los siguiente(s) archivo(s) superan el l\u00edmite de {limit} y no se pueden cargar: {files}", "files_list": "Archivos", "json_logs": "Registros JSON", "language": "Idioma", "pages_url": "URL de las p\u00e1ginas", "purge": "Eliminar", "refresh": "Actualizar", "select_repo": "Repositorio", "server_error": "Error del servidor: {detail}", "settings": "Configuraci\u00f3n", "title": "Subidor de archivos", "upload": "Subir", "upload_failed": "Error al subir", "upload_success": "Subida exitosa"}, "fr": {"choose_file": "Choisir un fichier", "close": "Fermer", "confirm_purge": "\u00cates-vous s\u00fbr de vouloir supprimer d\u00e9finitivement le d\u00e9p\u00f4t {repo} ?", "drop_hint": "D\u00e9posez un fichier ici ou cliquez pour s\u00e9lectionner", "file_too_large_warning": "Attention : le(s) fichier(s) suivant(s) d\u00e9passent la limite de {limit} et ne peuvent pas \u00eatre t\u00e9l\u00e9vers\u00e9s : {files}", "files_list": "Fichiers", "json_logs": "Journaux JSON", "language": "Langue", "pages_url": "URL des pages", "purge": "Purger", "refresh": "Rafra\u00eechir", "select_repo": "Repository", "server_error": "Erreur serveur : {detail}", "settings": "Param\u00e8tres", "title": "T\u00e9l\u00e9verseur", "upload": "T\u00e9l\u00e9verser", "upload_failed": "\u00c9chec du t\u00e9l\u00e9versement", "upload_success": "T\u00e9l\u00e9versement r\u00e9ussi"}, "fr-CA": {"choose_file": "Choisir un fichier", "close": "Fermer", "confirm_purge": "\u00cates-vous certain de vouloir supprimer d\u00e9finitivement le d\u00e9p\u00f4t {repo} ?", "drop_hint": "D\u00e9posez un fichier ici ou cliquez pour s\u00e9lectionner", "file_too_large_warning": "Attention : le(s) fichier(s) suivant(s) d\u00e9passent la limite de {limit} et ne peuvent pas \u00eatre t\u00e9l\u00e9vers\u00e9s : {files}", "files_list": "Fichiers", "json_logs": "Journaux JSON", "language": "Langue", "pages_url": "URL des pages", "purge": "Supprimer", "refresh": "Rafra\u00eechir", "select_repo": "D\u00e9p\u00f4t", "server_error": "Erreur serveur : {detail}", "settings": "Param\u00e8tres", "title": "T\u00e9l\u00e9verseur de fichiers", "upload": "T\u00e9l\u00e9verser", "upload_failed": "\u00c9chec du t\u00e9l\u00e9versement", "upload_success": "T\u00e9l\u00e9versement r\u00e9ussi"}, "ja": {"choose_file": "\u30d5\u30a1\u30a4\u30eb\u3092\u9078\u629e", "close": "\u9589\u3058\u308b", "confirm_purge": "\u672c\u5f53\u306b\u30ea\u30dd\u30b8\u30c8\u30ea {repo} \u3092\u5b8c\u5168\u306b\u524a\u9664\u3057\u307e\u3059\u304b\uff1f", "drop_hint": "\u3053\u3053\u306b\u30d5\u30a1\u30a4\u30eb\u3092\u30c9\u30ed\u30c3\u30d7\u3059\u308b\u304b\u3001\u30af\u30ea\u30c3\u30af\u3057\u3066\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044", "file_too_large_warning": "\u8b66\u544a: \u6b21\u306e\u30d5\u30a1\u30a4\u30eb\u306f {limit} \u306e\u4e0a\u9650\u3092\u8d85\u3048\u3066\u3044\u308b\u305f\u3081\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093: {files}", "files_list": "\u30d5\u30a1\u30a4\u30eb\u4e00\u89a7", "json_logs": "JSON\u30ed\u30b0", "language": "\u8a00\u8a9e", "pages_url": "\u30da\u30fc\u30b8URL", "purge": "\u524a\u9664", "refresh": "\u66f4\u65b0", "select_repo": "\u30ea\u30dd\u30b8\u30c8\u30ea", "server_error": "\u30b5\u30fc\u30d0\u30fc\u30a8\u30e9\u30fc: {detail}", "settings": "\u8a2d\u5b9a", "title": "\u30a2\u30c3\u30d7\u30ed\u30fc\u30c0\u30fc", "upload": "\u9001\u4fe1", "upload_failed": "\u9001\u4fe1\u5931\u6557", "upload_success": "\u9001\u4fe1\u6210\u529f"}, "ru": {"choose_file": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0444\u0430\u0439\u043b", "close": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c", "confirm_purge": "\u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b, \u0447\u0442\u043e \u0445\u043e\u0442\u0438\u0442\u0435 \u043d\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u0443\u0434\u0430\u043b\u0438\u0442\u044c \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u0439 {repo}?", "drop_hint": "\u041f\u0435\u0440\u0435\u0442\u0430\u0449\u0438\u0442\u0435 \u0444\u0430\u0439\u043b \u0441\u044e\u0434\u0430 \u0438\u043b\u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \u0434\u043b\u044f \u0432\u044b\u0431\u043e\u0440\u0430", "file_too_large_warning": "\u0412\u043d\u0438\u043c\u0430\u043d\u0438\u0435: \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0435 \u0444\u0430\u0439\u043b(\u044b) \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u044e\u0442 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435 {limit} \u0438 \u043d\u0435 \u043c\u043e\u0433\u0443\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043d\u044b: {files}", "files_list": "\u0424\u0430\u0439\u043b\u044b", "json_logs": "\u0416\u0443\u0440\u043d\u0430\u043b\u044b JSON", "language": "\u042f\u0437\u044b\u043a", "pages_url": "URL \u0441\u0442\u0440\u0430\u043d\u0438\u0446", "purge": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c", "refresh": "\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c", "select_repo": "\u0420\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u0439", "server_error": "\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0430: {detail}", "settings": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", "title": "\u0417\u0430\u0433\u0440\u0443\u0437\u0447\u0438\u043a", "upload": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c", "upload_failed": "\u041e\u0448\u0438\u0431\u043a\u0430 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0444\u0430\u0439\u043b\u0430", "upload_success": "\u0424\u0430\u0439\u043b \u0443\u0441\u043f\u0435\u0448\u043d\u043e \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043d"}, "zh-TW": {"choose_file": "\u9078\u64c7\u6a94\u6848", "close": "\u95dc\u9589", "confirm_purge": "\u60a8\u78ba\u5b9a\u8981\u6c38\u4e45\u522a\u9664\u5132\u5b58\u5eab {repo} \u55ce\uff1f", "drop_hint": "\u5c07\u6a94\u6848\u62d6\u66f3\u5230\u6b64\u8655\u6216\u9ede\u64ca\u9078\u64c7", "file_too_large_warning": "\u8b66\u544a\uff1a\u4e0b\u5217\u6a94\u6848\u8d85\u904e {limit} \u9650\u5236\uff0c\u7121\u6cd5\u4e0a\u50b3\uff1a {files}", "files_list": "\u6a94\u6848\u5217\u8868", "json_logs": "JSON \u65e5\u8a8c", "language": "\u8a9e\u8a00", "pages_url": "\u7db2\u9801\u9023\u7d50", "purge": "\u6e05\u9664", "refresh": "\u91cd\u65b0\u6574\u7406", "select_repo": "\u5132\u5b58\u5eab", "server_error": "\u4f3a\u670d\u5668\u932f\u8aa4\uff1a{detail}", "settings": "\u8a2d\u5b9a", "title": "\u6a94\u6848\u4e0a\u50b3\u5668", "upload": "\u4e0a\u50b3", "upload_failed": "\u4e0a\u50b3\u5931\u6557", "upload_success": "\u4e0a\u50b3\u6210\u529f"}},
+            currentLang: "en"
+        };
+    </script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/github-pages.js"></script>
+
+    <!-- Service Worker registration for offline capability -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('SW registered: ', registration);
+                }).catch(function(registrationError) {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+    </script>
+
+    <!-- Analytics placeholder -->
+    <!-- Add your analytics code here -->
+</body>
+</html>
